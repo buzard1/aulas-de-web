@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisao tabelas</title>
+</head>
+<body>
+     <center><h1>alinhamento de tabela e celulas</h1></center> <!-- deixa as colunas alinhadas de acordo de como vc quiser (esquerda, centro, direita) -->
+     <table border="1" align="center">
+            <td>primeira celula</td>
+            <td>segunda celula</td>
+            <td>terceira celula</td>
+            
+            <tr>
+                <td align="center">centro</td>
+                <td  align="left">esquerda</td>
+                <td align="right">direita</td>
+            </tr>
+        </table>
+         <br>
+         <br>
+
+         <center><h1>uso do cellspacing</h1></center>
+     <table border="1"  width= "80%" cellspacing="24" align="center"> <!-- cria um espaço em volta da suas colunas que pode ser modificado a sua vontade-->
+           
+            <tr>
+            <td  width= "33%" align="center">coluna 1</td>
+            <td  width= "33%" align="center">coluna 2</td>
+            <td  width= "34%" align="center">coluna 3</td>
+            </tr>
+    </table>
+         <br>
+         <br>
+         <br>
+         <center><h1>uso do cellspacing</h1></center>
+         <table border="1"  width= "80%" cellspacing="24" align="center"> <!-- apenas mudamos os nomes que estao nas colunas-->
+               
+                <tr>
+                <td  width= "25%" align="center">aluno</td>
+                <td  width= "30%" align="center">professor</td>
+                <td  width= "45%" align="center">tec. desenv</td>
+                </tr>
+        </table>
+                <br>
+                <br>
+                <center><h1>uso do rowspan</h1></center>
+                <table border="1"  width= "90%" cellspacing="7" align="center"> <!-- permite colocar mais de uma coluna em uma linha-->
+                      
+                       <tr>
+                       <td  width= "16%" rowspan="3">3 linhas</td>
+                       <td  width= "16%" >L1 coluna 2</td>
+                       <td  width= "16%" >L1 coluna 3</td>
+                       <td  width= "17%" >L1 coluna 4</td>
+                       <td  width= "17%" >L1 coluna 5</td>
+                       </tr>
+
+                       <tr>
+                        <td  width= "16%" >L1 coluna 2</td>
+                        <td  width= "16%" >L1 coluna 3</td>
+                        <td  width= "17%" >L1 coluna 4</td>
+                        <td  width= "17%" >L1 coluna 5</td>
+                        </tr>
+
+                        <tr>
+                            <td  width= "16%" >L1 coluna 2</td>
+                            <td  width= "16%" >L1 coluna 3</td>
+                            <td  width= "17%" >L1 coluna 4</td>
+                            <td  width= "17%" >L1 coluna 5</td>
+                            </tr>
+               </table>
+   
+
+
+               <br>
+                <br>
+                <center><h1>uso do colspan</h1></center>
+                <table border="1"  width= "80%" cellspacing="7" align="center"> <!--Bem parecido com o anterior mas esse permite que vc junte varios item em uma so coluna  -->
+                      
+                       <tr>
+                       <td  width= "24%" colspan="3">celula com 3 colunas</td>
+                       <td  width= "20%" >L1 coluna 4</td>
+                       <td  width= "20%" >L1 coluna 5</td>
+                       </tr>
+
+                       <tr>
+                        <td  width= "16%" bgcolor="green">L2 coluna 1</td>
+                        <td  width= "16%" bgcolor="blue">L2 coluna 2</td>
+                        <td  width= "17%" bgcolor="yellow">L2 coluna 3</td>
+                        <td  width= "24%" colspan="3" bgcolor="red">celula com 2 colunas</td>
+                        </tr>
+
+               </table>
+
+        
+
+     </table>
+
+     <br>
+     <br>
+
+</body>
+</html>
