@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="=POST" action="#Nickolas">
+        Qual o seu primeiro nome?
+        <input type="text" NAME="primeiro_nome" VALUE="carlos" SIZE="10" maxlength="15">
+        <br>
+        Informe sua senha de acesso (8 caracteres):
+        <input type="password" VALUE="xpto" name="sua_senha" SIZE="8" maxlength="8">
+        <br>
+        Você não pode visualizar nada aqui embaixo.
+        <input type="hidden" name="nome_oculto" value="form12">
+        <br>
+        Por favor, escreva aqui suas sugestões, dúvidas e críticas:<br>
+        <textarea name="crítica" row="3" cols="40">
+            Gostaria de obter mais informações sobre
+            este servidor. Grato.
+        </textarea>
+        Onde você pretende fazer turismo nas férias?
+        <select name="lugares_para_ver">
+            <option>Fortaleza</option>
+            <option value="sul">Florianópolis ou Porto Alegre</option>
+            <option>Rio de Janeiro</option>
+            <option selected>Brasília</option>
+            <option value="amazonia">Manaus</option>
+        </select>
+        <select name="opcional" multiple size="5">
+            <option>Televisão</option>
+            <option value="casal" selected>Cama de Casal</option>
+            <option>Ar condicionado</option>
+            <option>Fax</option>
+            <option selected>Modem V.34</option>
+            <option>Sauna</option>
+            <option>Lavanderia</option>
+            <option>Frigo-Bar</option>
+        </select>
+        <form actiont="/action_page.php">
+            <input type="checkbox" name="veiculo1" value="Bike"/> Eu tenho uma bike<br/>
+            <input type="checkbox" name="veiculo2" value="Car"/> Eu tenho um carro<br/>
+            <input type="checkbox" name="veiculo3" value="Barco" checked/> Eu tenho um barco<br/>
+            <input type="submit" value="Submit"/>
+        </form>
+        <form action="action_page.php">
+            <p>Porfavor selecione seu gênero:</p>
+            <input type="radio" name="gender" value="male"/> Masculino<br/>
+            <input type="radio" name="gender" value="female"/> Feminino<br/>
+            <input type="radio" name="gender" value="male"/> Outro<br/>
+            <p>Porfavor selecione sua idade:</p>
+            <input type="radio" name="age" value="30"/> 0 - 30 <br/>
+            <input type="radio" name="age" value="60"/> 31 - 60 <br/>
+            <input type="radio" name="age" value="100"/> 61 - 100 <br/>
+            <input type="submit" value="submit"/>
+            email: <input type="text" name="email"/><br/>
+            pin: <input type="text" name="pin" maxlength="4"/><br/>
+            <br>
+            <input type="reset" value="Reset"/>
+            <input type="submit" value="Submit"/>
+        </form>
+    </form>
+    
+</body>
+</html>
