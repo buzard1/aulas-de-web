@@ -13,6 +13,64 @@
         <br>
         Informe sua senha de acesso(8 caracteres)
         <input type="password" value="xptp" neme="sua_senha" size="8" maxlength="8">
+        <br>
+        <br>
+        Você não pode visualizar nada aqui em baixo
+        <input type="hidden" value="formal12" neme="nome_oculto">
+        <br>
+        <br>
+        Por favor, escreva aqui sua sugestões, duvidas e criticas
+        <textarea name="critica" rows="3" cols="40">
+              Gostaria de obter mais informações sobre 
+              este servidor. Grato.
+        </textarea>
+        <br>
+        <br>
+        Onde você pretende fazer turismo nas ferias?
+        <select name="lugares_para_ver">
+            <option>Fortaleza</option>
+            <option value="sul">Florianopolis ou Porto alegre</option>
+            <option>Rio de Janeiro</option>
+            <option selected>Brasilia</option>
+            <option value="Amazonia">Manaus</option>
+            <br>
+            <br>
+            Que feliciades de acomodação você deseja? <br>
+            <select name="opicional" multiple size="5"> 
+                <option>televisão</option>
+                <option value="casal" selected>Cama de casal</option>
+                <option>Ar condicionado</option>
+                <option>Fax</option>
+                <option selected>Modem v.34</option>
+                <option>sauna</option>
+                <option>lavanderia</option>
+                <option>frigo-bar</option>
+            <br> <br>
+            <form action="/action_page.php">
+                <input type="checkbox" name="vehicle1" value="bike"/> I have a bike <br/>
+                <input type="checkbox" name="vehicle2" value="car"/> I have a car <br/>
+                <input type="checkbox" name="vehicle3" value="boat"/> I have a boat <br/>
+                <input type="submit" value="submit"/>
+                <br> <br>
+                <input type="radio" name="gender" value="male"/> mele <br/>
+                <input type="radio" name="gender" value="female"/> female <br/>
+                <input type="Radio" name="gender" value="other"/> other <br/>
+                
+                <p>please select your age</p>
+                <input type="radio" name="age" value="30"/> 0-30 <br/>
+                <input type="radio" name="age" value="60"/> 31-60 <br/>
+                <input type="Radio" name="age" value="100"/> 61-100 <br/>
+                <input type="submit" value="submit">
+                <br><br>
+                email: <input type="text" name="email"/><br/>
+                pin: <input type="text" name="pin" maxlength="4"/><br/>
+                <input type="reset" value="reset"/>
+                <input type="submit" value="submit"/>
+
+
+
+            </form>
+        </select>
 
       </form>
 </body>
