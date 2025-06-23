@@ -16,7 +16,7 @@
    body{
     font: 18px/1.4 arial, sans-serif;
     color: #333;
-    background: ccc;
+    background: #ccc;
 }
   #tudo{
    width:100%;
@@ -49,13 +49,82 @@ color: #fff;
 }
 .principal{
 width: 100%;
+padding: 20px 15px;
+}
+.rodape{
+  background: #036;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+}
 
+pre{
+font-size: 14px;
+}
 
+@media (max-width:1040px){
+  pre{
+    font-size:12px;
+  }
 }
 
 </style>
-    </head>
- <body>
-    
+</head>
+ <body class="home">
+  <div id="tudo">
+    <div class="topo">
+      <header class="topo_header">
+        <hgroup>
+            <h1>
+              <a href="/">Formularios</a>
+            </h1>
+            <h2>Elementos e atributos</h2>
+        </hgroup>
+      </header>
+    </div> <!--/.topo-->
+  
+  <div class="principal">
+    <main>
+      <section>
+        <h1>Elementos fieldset, legend, label</h1>
+          <form action="" method="">
+            <fieldset>
+              <legend>Dados Pessoais</legend>
+                <p><small>Campos com rótulo implicito</small></p>
+                <label>Nome:<input type="text" name="nome"> </label>
+                <label>Sobrenome:<input type="text" name="sobrenome"> </label>
+                <label>Email:<input type="email" name="email"> </label>
+                
+            </fieldset>
+
+
+            <fieldset>
+              <legend>Suas Preferências</legend>
+                <p><small>Campos com rótulo explícito</small></p>
+                <label for="livro">Livro:</label>
+              <input type="text" id="livro" name="livro">
+                <label for="filme">Filme:</label>
+              <input type="text" id="filme" name="filme">
+                <label for="esporte">Esporte: </label>
+              <input type="text" id="esporte" name="esporte">
+                
+              </fieldset>
+            </form>
+          </section>
+        </main>
+      </div> <!--/. PRINCIPAL -->
+    <div class="rodape">
+      <footer>
+        <small>Site Desenvolvido pelo Aluno Matheus Henrique Coelho Amaral</small>
+      </footer>
+
+    </div> <!-- /. RODAPE -->
+    </div> <!-- /. TUDO -->
+
+ 
+  
+
+
+
 </body>
 </html>
