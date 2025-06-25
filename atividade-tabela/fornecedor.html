@@ -9,29 +9,22 @@
   <form>
     <table border="1" cellpadding="10">
       <tr>
-        <!-- Logo mesclada nas duas linhas -->
-        <td rowspan="2">
-          <!-- Substitua "logo.png" pelo caminho da sua imagem -->
+        <th rowspan="2">
           <img src="logo.png" alt="Logo da Empresa" width="100">
-        </td>
-
-        <!-- Primeira linha de campos -->
-        <td><label for="nome_fornecedor">Nome do Fornecedor:</label></td>
-        <td><input type="text" id="nome_fornecedor" name="nome_fornecedor" required></td>
-
-        <td><label for="cnpj">CNPJ:</label></td>
-        <td><input type="text" id="cnpj" name="cnpj" required></td>
+        </th>
+        <th>Nome do Fornecedor</th>
+        <th>CNPJ</th>
+        <th>Email</th>
+        <th>Telefone</th>
       </tr>
       <tr>
-        <!-- Segunda linha de campos -->
-        <td><label for="email">Email:</label></td>
-        <td><input type="email" id="email" name="email" required></td>
-
-        <td><label for="telefone">Telefone:</label></td>
-        <td><input type="tel" id="telefone" name="telefone" required></td>
+        <td><input type="text" name="nome_fornecedor" required></td>
+        <td><input type="text" name="cnpj" required></td>
+        <td><input type="email" name="email" required></td>
+        <td><input type="tel" name="telefone" required></td>
       </tr>
       <tr>
-        <td colspan="6" align="center">
+        <td colspan="5" align="center">
           <button type="submit">Cadastrar</button>
           <button type="reset">Limpar</button>
         </td>
@@ -39,10 +32,8 @@
     </table>
   </form>
 
-  <center>
-    <address>
-      Emanuel Fernandes Costa / Estudante / Técnico em Desenvolvimento de Sistemas
-    </address>
-  </center>
+  <footer>
+    <p>Desenvolvido por: Emanuel Fernandes Costa</p>
+  </footer>
 </body>
 </html>
