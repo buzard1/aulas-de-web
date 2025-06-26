@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário - Cadastro de Fornecedor</title>
+</head>
+<body>
+  <h2>Cadastro de Fornecedor</h2>
+  <form>
+    <table border="1" cellpadding="10">
+      <tr>
+        <th rowspan="2">
+          <img src="logo.png" alt="Logo da Empresa" width="100">
+        </th>
+        <th>Nome do Fornecedor</th>
+        <th>CNPJ</th>
+        <th>Email</th>
+        <th>Telefone</th>
+      </tr>
+      <tr>
+        <td><input type="text" name="nome_fornecedor" required></td>
+        <td><input type="text" name="cnpj" required></td>
+        <td><input type="email" name="email" required></td>
+        <td><input type="tel" name="telefone" required></td>
+      </tr>
+      <tr>
+        <td colspan="5" align="center">
+          <button type="submit">Cadastrar</button>
+          <button type="reset">Limpar</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
+  <footer>
+    <p>Desenvolvido por: Emanuel Fernandes Costa</p>
+  </footer>
+</body>
+</html>
