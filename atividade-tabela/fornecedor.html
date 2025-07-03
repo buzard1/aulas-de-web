@@ -3,11 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>Formulário - Cadastro de Fornecedor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 800px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #e0e0e0;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+      width: 95%;
+      padding: 5px;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    button[type="reset"] {
+      background-color: #f44336;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
   <h2>Cadastro de Fornecedor</h2>
   <form>
-    <table border="1" cellpadding="10">
+    <table>
       <tr>
         <th rowspan="2">
           <img src="logo.png" alt="Logo da Empresa" width="100">
@@ -24,7 +89,7 @@
         <td><input type="tel" name="telefone" required></td>
       </tr>
       <tr>
-        <td colspan="5" align="center">
+        <td colspan="5">
           <button type="submit">Cadastrar</button>
           <button type="reset">Limpar</button>
         </td>
